@@ -1,2 +1,24 @@
 # python-project-skeleton
-Initial Python project
+
+
+prerequisite:
+- docker
+- docker-compose
+
+## How to use
+```console
+# build service
+docker-compose build dev
+
+# lint
+docker-compose run dev inv lint
+
+# test
+docker-compose run dev inv test
+
+# run command line in container
+docker-compose run dev
+```
+
+To do:
+- CI/CD template

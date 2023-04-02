@@ -1,0 +1,14 @@
+version: "3"
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      - PATH=$PATH:/app/.venv/bin
+    network_mode: bridge
+    stdin_open: true
+    tty: true
