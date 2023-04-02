@@ -6,7 +6,7 @@ prerequisite:
 - docker-compose
 
 ## How to use
-```console
+```bash
 # build service
 docker-compose build dev
 
